@@ -1,0 +1,202 @@
+.hero-illustration {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 650px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.hero-artwork {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.hero-decoration {
+  position: absolute;
+  z-index: 1;
+  background: #40b7d2;
+  border-radius: 6px;
+}
+
+.square-one {
+  top: -1%;
+  right: 19%;
+  width: 36px;
+  height: 36px;
+}
+
+.square-two {
+  top: 7%;
+  right: 10%;
+  width: 24px;
+  height: 24px;
+}
+
+.square-three {
+  top: 2%;
+  right: 5%;
+  width: 28px;
+  height: 28px;
+}
+
+.square-four {
+  top: 15%;
+  right: 14%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.square-five {
+  top: 15%;
+  right: 5%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.hero-card {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #d8eaf0;
+  border-radius: 22px;
+}
+
+.hero-card-top {
+  top: 9.2%;
+  left: 7.5%;
+  width: 57%;
+}
+
+.hero-card-bottom {
+  right: -1.5%;
+  bottom: 3.1%;
+  width: 54%;
+}
+
+.hero-icon {
+  display: flex;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.hero-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.hero-icon-skill {
+  background: #d1ebf2;
+}
+
+.hero-icon-skill svg {
+  fill: #1489a2;
+}
+
+.hero-icon-check {
+  background: #d7f3ea;
+}
+
+.hero-icon-check svg {
+  fill: none;
+  stroke: #168a78;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-card-copy {
+  min-width: 0;
+}
+
+.hero-card-copy h3 {
+  margin: 0;
+  color: #073e49;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.hero-card-copy p {
+  margin: 4px 0 0;
+  color: #78929c;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .hero-card {
+    gap: 9px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .hero-card-top {
+    width: 62%;
+  }
+
+  .hero-card-bottom {
+    right: 0;
+    width: 62%;
+  }
+
+  .hero-icon {
+    flex-basis: 34px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .hero-card-copy h3 {
+    font-size: 12px;
+  }
+
+  .hero-card-copy p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-card-top {
+    left: 4%;
+    width: 65%;
+  }
+
+  .hero-card-bottom {
+    width: 68%;
+  }
+
+  .hero-card {
+    gap: 6px;
+    padding: 9px;
+  }
+
+  .hero-card-copy h3 {
+    font-size: 11px;
+  }
+
+  .hero-card-copy p {
+    font-size: 9px;
+  }
+}
